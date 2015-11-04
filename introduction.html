@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    
+      <title>Introduction</title>
+    
+
+    
+    
+
+    
+
+    
+    
+      
+
+    
+
+    
+    
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    
+
+    
+
+    
+
+  </head>
+  <body>
+    <div class="header">
+  <div class="main-block full-layout">
+    <a href="http://www.yunbaoxiao.com"><div class="home-logo"></div></a>
+    <div class="header-link">
+      <ul>
+        <li id="min-margin"><a href="https://admin.cloudbaoxiao.com">登录</a></li>
+        <li class="header-button ie-button1"><a href="#sign">申请试用</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    <div class="sidebar-layout full-layout">
+        <section class="layout-sidebar">
+          <div class="menu">
+            
+              
+              
+                  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="toc.html">TOC Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toc.html#one">One</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#workflow">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#methodology">Methodology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simplifying-the-developer-experience">Simplifying the Developer Experience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rest.html">样例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id3">标题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id4">段落</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id5">文字强调</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id6">图片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id7">链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id11">引用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#footnote">脚注(Footnote)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id13">代码段</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id14">列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id17">表格</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#field-lists">字段列表(Field lists)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#sidebar">边栏(Sidebar)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#admonitions">箴言(Admonitions)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#html">内嵌HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id20">自动生成目录</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#id21">锚点跳转</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest.html#css">CSS样式</a></li>
+</ul>
+</li>
+</ul>
+
+              
+            
+          </div>
+        </section>
+        <section class="layout-content">
+        <div class="rst-content">
+            
+  <div class="section" id="introduction">
+<span id="id1"></span><h1>Introduction<a class="headerlink" href="#introduction" title="永久链接至标题">¶</a></h1>
+<p>PyPackage Docker is a tool set for packaging Python and Django applications using Docker and Wheels.</p>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>Create deployable and versionable application artefacts (i.e. Python wheels)</li>
+<li>Create deployable and versionable operating environment artefacts (i.e. Docker images)</li>
+<li>Leverage Python standards and existing toolsets (<code class="docutils literal"><span class="pre">pip</span></code> and <code class="docutils literal"><span class="pre">virtualenv</span></code>) as much as possible</li>
+<li>Reduce build times by using cacheable pre-built application artefacts (i.e. Python wheels)</li>
+</ul>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
+<p>PyPackage Docker uses a <code class="docutils literal"><span class="pre">Makefile</span></code> which restricts use to OS X and Linux.</p>
+<p>PyPackage Docker requires the following:</p>
+<ul class="simple">
+<li>A Python application(s) to package</li>
+<li>Docker daemon (local or remote)</li>
+<li>Docker client</li>
+</ul>
+<p>PyPackage Docker was created and tested against Docker version 1.8.2.</p>
+</div>
+<div class="section" id="simplifying-the-developer-experience">
+<h2>Simplifying the Developer Experience<a class="headerlink" href="#simplifying-the-developer-experience" title="永久链接至标题">¶</a></h2>
+<p>All of the various tasks of building images, building packages and running release and development containers are performed using the <code class="docutils literal"><span class="pre">docker</span></code> command line tool.</p>
+<p>The <code class="docutils literal"><span class="pre">docker</span></code> tool generally requires a number of inputs, which make it harder for new users to pick up quickly.</p>
+<p>PyPackage Docker includes a <a href="https://github.com/cloudhotspot/pypackage-docker/blob/master/Makefile" target="_blank">Makefile</a> that simplifies the commands required to execute each of the various tasks to simple <code class="docutils literal"><span class="pre">make</span></code> commands.</p>
+</div>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="永久链接至标题">¶</a></h2>
+<p>Inspiration and ideas for this project were drawn from the following sources:</p>
+<ul class="simple">
+<li><a href="https://glyph.twistedmatrix.com/2015/03/docker-deploy-double-dutch.html" target="_blank">https://glyph.twistedmatrix.com/2015/03/docker-deploy-double-dutch.html</a></li>
+<li><a href="http://marmelab.com/blog/2014/09/10/make-docker-command.html" target="_blank">http://marmelab.com/blog/2014/09/10/make-docker-command.html</a></li>
+<li><a href="http://www.itnotes.de/docker/development/tools/2014/08/31/speed-up-your-docker-workflow-with-a-makefile/" target="_blank">http://www.itnotes.de/docker/development/tools/2014/08/31/speed-up-your-docker-workflow-with-a-makefile/</a></li>
+<li><a href="https://hynek.me/articles/virtualenv-lives/" target="_blank">https://hynek.me/articles/virtualenv-lives/</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </section>
+      </div>
+    
+    <div class="footer">
+  <div class="main-block full-layout">
+    <div class="copyright">
+      <p class="footer-text">© 2014-2015 如数科技有限公司 / All Rights Reserved</p>
+    </div>
+    <div class="footer-link">
+      <ul>
+        <li><a href="contact.html">关于我们</a></li>
+        <li><a href="help.html">帮助中心</a></li>
+        <li><a href="joinus.html">加入我们</a></li>
+      </ul>
+    </div>
+    <div class="record">
+      <p class="footer-text">京ICP备14046885号-2</p>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
